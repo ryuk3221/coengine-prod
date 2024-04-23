@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top__inner">
+            <button class="header-top__burger">
+              <img src="images/icons/burger.svg" alt="">
+            </button>
+            <a class="header-top__logo" href="index.html">
+              <img src="images/logo_coengine_1.svg" alt="">
+            </a>
+            <div class="header-top__user-nav user-nav">
+              <a class="user-nav__item" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0122 3.57193L9.92522 2.48494C7.77734 0.337053 4.29493 0.337053 2.14705 2.48494C-0.000838161 4.63282 -0.000838041 8.11523 2.14705 10.2631L10.9859 19.1019L10.9877 19.1001L11.014 19.1265L19.8528 10.2876C22.0007 8.13976 22.0007 4.65736 19.8528 2.50947C17.705 0.361589 14.2226 0.361589 12.0747 2.50947L11.0122 3.57193ZM10.9877 16.2717L15.9239 11.3355L17.3747 9.93445L17.3762 9.93589L18.4386 8.87343C19.8055 7.5066 19.8055 5.29052 18.4386 3.92369C17.0718 2.55685 14.8557 2.55685 13.4889 3.92369L11.0133 6.39928L11.006 6.39204L11.005 6.39312L8.51101 3.89915C7.14417 2.53231 4.92809 2.53231 3.56126 3.89915C2.19442 5.26598 2.19442 7.48206 3.56126 8.8489L6.10068 11.3883L6.10248 11.3865L10.9877 16.2717Z" fill="#f4ad42"/>
+                </svg>
+                <span style="color: #f4ad42;">0</span>
+              </a>
+              <a class="user-nav__item" href="cart.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00589 3H3V4.7H5.69063L8.00538 15.476H8.01608V15.75H18.8842V15.5391L20.7178 7.32731L21 6.4H7.72782L7.251 4.18024L7.00589 3ZM18.8733 8.1H8.093L9.3711 14.05H17.5448L18.8733 8.1Z" fill="#f4ad42"/>
+                  <path d="M10.5241 20C11.4476 20 12.1961 19.2389 12.1961 18.3C12.1961 17.3611 11.4476 16.6 10.5241 16.6C9.60068 16.6 8.85209 17.3611 8.85209 18.3C8.85209 19.2389 9.60068 20 10.5241 20Z" fill="#f4ad42"/>
+                  <path d="M18.0482 18.3C18.0482 19.2389 17.2996 20 16.3762 20C15.4528 20 14.7042 19.2389 14.7042 18.3C14.7042 17.3611 15.4528 16.6 16.3762 16.6C17.2996 16.6 18.0482 17.3611 18.0482 18.3Z" fill="#f4ad42"/>
+                </svg>
+                <span class="mobile-cart-count" style="color: #f4ad42;">0</span>
+              </a>
+            </div>
+            <a class="header-top__mail-link"  href="mailto:examplae.com" itemprop="email">stephenchew.business.hk@gmail.com</a>
+            <a class="header-top__phone-link" href="tel:88003015752" itemprop="telephone">+852 60447160</a>
+          </div>
+        </div>
+      </div>
+      <div class="header-bot">
+        <div class="container">
+          <div class="header-bot__inner">
+            <nav class="header-bot__nav">
+              <ul class="header-bot__nav-list" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <li class="header-bot__nav-item">
+                  <button class="header-bot__nav-link header-bot__nav-link--catalog">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="9" viewBox="0 0 10 9" fill="none">
+                      <rect x="0.65625" y="0.296875" width="9.0625" height="1.98438" rx="0.992188" fill="#f4ad42"/>
+                      <rect x="0.65625" y="3.28125" width="9.0625" height="2.01562" rx="1" fill="#f4ad42"/>
+                      <rect x="0.65625" y="6.29688" width="9.0625" height="1.98438" rx="0.992188" fill="#f4ad42"/>
+                    </svg>
+                    Products
+                  </button>
+                </li>
+                <li class="header-bot__nav-item">
+                  <a class="header-bot__nav-link" href="#" itemprop="url">Payment Methods</a>
+                </li>
+                <li class="header-bot__nav-item">
+                  <a class="header-bot__nav-link" href="#" itemprop="url">Delivery charges</a>
+                </li>
+                <li class="header-bot__nav-item">
+                  <a class="header-bot__nav-link" href="#" itemprop="url">Our brands</a>
+                </li>
+                <li class="header-bot__nav-item">
+                  <a class="header-bot__nav-link" href="#" itemprop="url">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header-bot__input-container">
+              <div class="header-bot__input-box">
+                <input id="search-input" type="text" placeholder="Search products">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <g opacity="0.3">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8688 15.4573C19.3126 12.3188 19.0918 7.77813 16.2067 4.89295C13.0825 1.76876 8.01714 1.76876 4.89295 4.89295C1.76876 8.01714 1.76876 13.0825 4.89295 16.2067C7.77813 19.0918 12.3188 19.3126 15.4573 16.8688C15.4708 16.8841 15.4849 16.8991 15.4996 16.9138L19.7422 21.1564C20.1327 21.5469 20.7659 21.5469 21.1564 21.1564C21.5469 20.7659 21.5469 20.1327 21.1564 19.7422L16.9138 15.4996C16.8991 15.4849 16.8841 15.4708 16.8688 15.4573ZM14.7924 6.30716C17.1356 8.65031 17.1356 12.4493 14.7924 14.7924C12.4493 17.1356 8.65031 17.1356 6.30716 14.7924C3.96402 12.4493 3.96402 8.65031 6.30716 6.30716C8.65031 3.96402 12.4493 3.96402 14.7924 6.30716Z" fill="#B9BEC0"/>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <a class="header-bot__favorite-link" href="favorite.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0122 5.57193L10.9252 4.48494C8.77734 2.33705 5.29493 2.33705 3.14705 4.48494C0.999162 6.63282 0.999162 10.1152 3.14705 12.2631L11.9859 21.1019L11.9877 21.1001L12.014 21.1265L20.8528 12.2876C23.0007 10.1398 23.0007 6.65736 20.8528 4.50947C18.705 2.36159 15.2226 2.36159 13.0747 4.50947L12.0122 5.57193ZM11.9877 18.2717L16.9239 13.3355L18.3747 11.9344L18.3762 11.9359L19.4386 10.8734C20.8055 9.5066 20.8055 7.29052 19.4386 5.92369C18.0718 4.55685 15.8557 4.55685 14.4889 5.92369L12.0133 8.39928L12.006 8.39204L12.005 8.39312L9.51101 5.89915C8.14417 4.53231 5.92809 4.53231 4.56126 5.89915C3.19442 7.26598 3.19442 9.48206 4.56126 10.8489L7.10068 13.3883L7.10248 13.3865L11.9877 18.2717Z" fill="#f4ad42"/>
+              </svg>
+              <span class="favorite-link__count" style="color: #f4ad42;">0</span>
+            </a>
+            <a class="header-bot__cart-link cart-link" href="cart.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00589 3H3V4.7H5.69063L8.00538 15.476H8.01608V15.75H18.8842V15.5391L20.7178 7.32731L21 6.4H7.72782L7.251 4.18024L7.00589 3ZM18.8733 8.1H8.093L9.3711 14.05H17.5448L18.8733 8.1Z" fill="#f4ad42"/>
+                <path d="M10.5241 20C11.4476 20 12.1961 19.2389 12.1961 18.3C12.1961 17.3611 11.4476 16.6 10.5241 16.6C9.60068 16.6 8.85209 17.3611 8.85209 18.3C8.85209 19.2389 9.60068 20 10.5241 20Z" fill="#f4ad42"/>
+                <path d="M18.0482 18.3C18.0482 19.2389 17.2996 20 16.3762 20C15.4528 20 14.7042 19.2389 14.7042 18.3C14.7042 17.3611 15.4528 16.6 16.3762 16.6C17.2996 16.6 18.0482 17.3611 18.0482 18.3Z" fill="#f4ad42"/>
+              </svg>
+              <span class="cart-link__cart-count" style="color: #f4ad42;">0</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="catalog-menu">
+        <div class="catalog-menu__content">
+          <button class="catalog-menu__btn-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+          </button>
+          <div class="catalog-menu__logo"><img src="images/logo_coengine_1.svg" alt=""></div>
+          <div class="catalog-menu__dropdowns">
+            <div class="catalog-menu__dropdown">
+              <div class="catalog-menu__dropdown-head">
+                <span>NOTEBOOKS</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"/></svg>
+              </div>
+              <div class="catalog-menu__dropdown-content">
+                <a class="dropdown-content__link" href="notebooks.html">Acer <span>(24)</span></a>
+                <a class="dropdown-content__link" href="notebooks.html">Apple <span>(51)</span></a>
+                <a class="dropdown-content__link" href="notebooks.html">ASUS <span>(37)</span></a>
+                <a class="dropdown-content__link" href="notebooks.html">MSI <span>(21)</span></a>
+                <a class="dropdown-content__link" href="notebooks.html">DEXP <span>(18)</span></a>
+                <a class="dropdown-content__link" href="notebooks.html">HUAWEI <span>(24)</span></a>
+              </div>
+            </div>
+            <div class="catalog-menu__dropdown">
+              <div class="catalog-menu__dropdown-head">
+                <span>MONITORS</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"/></svg>
+              </div>
+              <div class="catalog-menu__dropdown-content">
+                <a class="dropdown-content__link" href="monitors.html">Acer <span>(12)</span></a>
+                <a class="dropdown-content__link" href="monitors.html">AOC <span>(23)</span></a>
+                <a class="dropdown-content__link" href="monitors.html">ARDOR GAMING <span>(37)</span></a>
+                <a class="dropdown-content__link" href="monitors.html">ASUS <span>(24)</span></a>
+                <a class="dropdown-content__link" href="monitors.html">DEXP <span>(18)</span></a>
+                <a class="dropdown-content__link" href="monitors.html">SAMSUNG <span>(21)</span></a>
+                <a class="dropdown-content__link" href="monitors.html">PHILIPS <span>(21)</span></a>
+              </div>
+            </div>
+            <div class="catalog-menu__dropdown">
+              <div class="catalog-menu__dropdown-head">
+                <span>MOBILE PHONES</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"/></svg>
+              </div>
+              <div class="catalog-menu__dropdown-content">
+                <a class="dropdown-content__link" href="mobiles.html">Apple <span>(51)</span></a>
+                <a class="dropdown-content__link" href="mobiles.html">HONOR <span>(37)</span></a>
+                <a class="dropdown-content__link" href="mobiles.html">SAMSUNG <span>(21)</span></a>
+                <a class="dropdown-content__link" href="mobiles.html">XIAOMI <span>(18)</span></a>
+                <a class="dropdown-content__link" href="mobiles.html">NOKIA <span>(24)</span></a>
+              </div>
+            </div>
+            <div class="catalog-menu__dropdown">
+              <div class="catalog-menu__dropdown-head">
+                <span>GRAPHIS TABLETS</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"/></svg>
+              </div>
+              <div class="catalog-menu__dropdown-content">
+                <a class="dropdown-content__link" href="tablets.html">Apple <span>(51)</span></a>
+                <a class="dropdown-content__link" href="tablets.html">HONOR <span>(37)</span></a>
+                <a class="dropdown-content__link" href="tablets.html">SAMSUNG <span>(21)</span></a>
+                <a class="dropdown-content__link" href="tablets.html">XIAOMI <span>(18)</span></a>
+                <a class="dropdown-content__link" href="tablets.html">NOKIA <span>(24)</span></a>
+              </div>
+            </div>
+            <div class="catalog-menu__dropdown">
+              <div class="catalog-menu__dropdown-head">
+                <span>CPU</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"/></svg>
+              </div>
+              <div class="catalog-menu__dropdown-content">
+                <a class="dropdown-content__link" href="cpu.html">AMD <span>(24)</span></a>
+                <a class="dropdown-content__link" href="cpu.html">INTEL <span>(51)</span></a>
+              </div>
+            </div>
+            <div class="catalog-menu__dropdown">
+              <div class="catalog-menu__dropdown-head">
+                <span>GRAPHICS CARDS</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"/></svg>
+              </div>
+              <div class="catalog-menu__dropdown-content">
+                <a class="dropdown-content__link" href="graphis.html">Acer <span>(24)</span></a>
+                <a class="dropdown-content__link" href="graphis.html">Apple <span>(51)</span></a>
+                <a class="dropdown-content__link" href="graphis.html">ASUS <span>(37)</span></a>
+                <a class="dropdown-content__link" href="graphis.html">MSI <span>(21)</span></a>
+                <a class="dropdown-content__link" href="graphis.html">DEXP <span>(18)</span></a>
+                <a class="dropdown-content__link" href="graphis.html">HUAWEI <span>(24)</span></a>
+              </div>
+            </div>
+            <div class="catalog-menu__dropdown">
+              <div class="catalog-menu__dropdown-head">
+                <span>MOTHERBOARDS</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"/></svg>
+              </div>
+              <div class="catalog-menu__dropdown-content">
+                <a class="dropdown-content__link" href="motherboards.html">Acer <span>(24)</span></a>
+                <a class="dropdown-content__link" href="motherboards.html">Apple <span>(51)</span></a>
+                <a class="dropdown-content__link" href="motherboards.html">ASUS <span>(37)</span></a>
+                <a class="dropdown-content__link" href="motherboards.html">MSI <span>(21)</span></a>
+                <a class="dropdown-content__link" href="motherboards.html">DEXP <span>(18)</span></a>
+                <a class="dropdown-content__link" href="motherboards.html">HUAWEI <span>(24)</span></a>
+              </div>
+            </div>
+            <div class="catalog-menu__dropdown">
+              <div class="catalog-menu__dropdown-head">
+                <span>SSD</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"/></svg>
+              </div>
+              <div class="catalog-menu__dropdown-content">
+                <a class="dropdown-content__link" href="ssd.html">Acer <span>(24)</span></a>
+                <a class="dropdown-content__link" href="ssd.html">Apple <span>(51)</span></a>
+                <a class="dropdown-content__link" href="ssd.html">ASUS <span>(37)</span></a>
+                <a class="dropdown-content__link" href="ssd.html">MSI <span>(21)</span></a>
+                <a class="dropdown-content__link" href="ssd.html">DEXP <span>(18)</span></a>
+                <a class="dropdown-content__link" href="ssd.html">HUAWEI <span>(24)</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-menu__contacts">
+            <div class="footer-top__contact-box">
+              <a class="footer-top__phone-link" style="color: #000;" href="#">+852 60447160</a>
+              <a class="footer-top__phone-link" style="color: #000;" href="#">+65 97700236</a>
+              <a class="footer-top__adress-link" href="#">Room No. 301, Unit C, 2nd Floor
+                Kwong On Bank Mongkok Branch Building, 728-730
+                Nathan Road, Mongkok, Kowloon, Hong Kong</a>
+              <a class="footer-top__mail-link" href="mailto:">stephenchew.business.hk@gmail.com</a>
+              <div class="footer-top__social">
+                <a class="footer-top__social-link" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z" fill="#f4ad42"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.78977 14.8414C11.1626 12.9363 14.0785 11.6803 15.5374 11.0734C19.7031 9.34081 20.5687 9.03983 21.1329 9.02989C21.257 9.02771 21.5344 9.05846 21.7141 9.20429C21.8659 9.32742 21.9076 9.49376 21.9276 9.6105C21.9476 9.72725 21.9725 9.9932 21.9527 10.201C21.7269 12.5729 20.7502 18.3287 20.2533 20.9852C20.043 22.1093 19.629 22.4862 19.2281 22.5231C18.3571 22.6032 17.6956 21.9474 16.8519 21.3944C15.5317 20.529 14.7859 19.9902 13.5044 19.1458C12.0235 18.1698 12.9835 17.6334 13.8275 16.7568C14.0484 16.5274 17.8864 13.0365 17.9607 12.7198C17.97 12.6802 17.9786 12.5326 17.8909 12.4546C17.8032 12.3766 17.6737 12.4033 17.5803 12.4245C17.4479 12.4545 15.3389 13.8485 11.2532 16.6065C10.6546 17.0175 10.1123 17.2178 9.62652 17.2073C9.09094 17.1958 8.0607 16.9045 7.29483 16.6555C6.35545 16.3502 5.60886 16.1888 5.67387 15.6702C5.70773 15.4001 6.0797 15.1238 6.78977 14.8414Z" fill="white"/>
+                  </svg>
+                </a>
+                <a class="footer-top__social-link"  href="#"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <rect width="30" height="30" rx="15" fill="white"/>
+                    <path d="M15 0C6.717 0 0 6.717 0 15C0 23.283 6.717 30 15 30C23.283 30 30 23.283 30 15C30 6.717 23.283 0 15 0ZM15.3179 23.7334C15.3177 23.7334 15.3181 23.7334 15.3179 23.7334H15.3143C13.8116 23.7328 12.3351 23.356 11.0239 22.641L6.26472 23.8891L7.53845 19.2382C6.7527 17.8773 6.33934 16.3332 6.34003 14.7514C6.34209 9.80301 10.3695 5.77721 15.3179 5.77721C17.7193 5.77812 19.9736 6.71288 21.6685 8.40912C23.3636 10.1056 24.2965 12.3605 24.2956 14.7585C24.2935 19.7072 20.2657 23.7334 15.3179 23.7334Z" fill="#f4ad42"/>
+                    <path d="M15.3207 7.29297C11.2047 7.29297 7.8573 10.639 7.85547 14.752C7.85501 16.1615 8.2496 17.5341 8.99645 18.7217L9.17383 19.0039L8.41989 21.7567L11.2441 21.016L11.5167 21.1776C12.6622 21.8574 13.9755 22.217 15.3145 22.2174H15.3175C19.4303 22.2174 22.7777 18.8712 22.7795 14.7579C22.7802 12.7646 22.0047 10.8905 20.596 9.48062C19.1872 8.07071 17.3136 7.29366 15.3207 7.29297ZM19.7097 17.9591C19.5227 18.4828 18.6267 18.9609 18.1957 19.0255C17.8091 19.0831 17.3202 19.1072 16.7828 18.9366C16.4569 18.8332 16.0391 18.6952 15.5038 18.4642C13.2537 17.4929 11.784 15.2278 11.6718 15.0782C11.5597 14.9285 10.7559 13.8621 10.7559 12.7582C10.7559 11.6545 11.3354 11.1119 11.5409 10.8876C11.7467 10.663 11.9898 10.6069 12.1392 10.6069C12.2887 10.6069 12.4384 10.6083 12.5691 10.6147C12.7069 10.6216 12.8918 10.5623 13.0738 10.9997C13.2607 11.4488 13.7094 12.5524 13.7654 12.6646C13.8215 12.777 13.8588 12.9079 13.7842 13.0576C13.7094 13.2073 13.4608 13.5302 13.2234 13.8246C13.1239 13.9479 12.9941 14.0578 13.125 14.2823C13.2557 14.5066 13.7062 15.2411 14.3729 15.8358C15.2298 16.5998 15.9526 16.8364 16.1769 16.9488C16.401 17.061 16.5319 17.0422 16.6629 16.8927C16.7935 16.743 17.2236 16.2379 17.3731 16.0134C17.5225 15.7888 17.6722 15.8264 17.8778 15.9012C18.0835 15.9758 19.1863 16.5185 19.4106 16.6307C19.6349 16.743 19.7843 16.7991 19.8404 16.8927C19.8967 16.9863 19.8967 17.4352 19.7097 17.9591Z" fill="#f4ad42"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main catalog-page">
+
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <a class="breadcrumbs__link" href="#" itemprop="item">Home - </a>
+            </li>
+            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <span class="breadcrumbs__link breadcrumbs__link--active" itemprop="item">Motherboards</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="catalog">
+        
+        <div class="container">
+          <h1 class="catalog__title">Motherboards</h1>
+          <div class="catalog__inner">
+            <div class="catalog__sidebar-container">
+              <div class="catalog__sidebar">
+                <div class="catalog__links-box">
+                  <h6 class="catalog__sidebar-title">PRODUCTS</h6>
+                  <div class="sidebar__drops">
+                    <div class="sidebar__dropdown">
+                      <div class="sidebar__dropdown-head">
+                        <span>Monitors</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
+                          <path d="M0.5 12.5L6.5 6.5L0.5 0.5" stroke="#f4ad42"></path>
+                        </svg>
+                      </div>
+                      <div class="sidebar__dropdown-content">
+                        <a class="dropdown-content__link" href="monitors.html">Acer <span>(12)</span></a>
+                        <a class="dropdown-content__link" href="monitors.html">AOC <span>(23)</span></a>
+                        <a class="dropdown-content__link" href="monitors.html">ARDOR GAMING <span>(37)</span></a>
+                        <a class="dropdown-content__link" href="monitors.html">ASUS <span>(24)</span></a>
+                        <a class="dropdown-content__link" href="monitors.html">DEXP <span>(18)</span></a>
+                        <a class="dropdown-content__link" href="monitors.html">SAMSUNG <span>(21)</span></a>
+                        <a class="dropdown-content__link" href="monitors.html">PHILIPS <span>(21)</span></a>
+                      </div>
+                    </div>
+                    <div class="sidebar__dropdown">
+                      <div class="sidebar__dropdown-head">
+                        <span>Notebooks</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
+                          <path d="M0.5 12.5L6.5 6.5L0.5 0.5" stroke="#f4ad42"></path>
+                        </svg>
+                      </div>
+                      <div class="sidebar__dropdown-content">
+                        <a class="dropdown-content__link" href="notebooks.html">Acer <span>(24)</span></a>
+                        <a class="dropdown-content__link" href="notebooks.html">Apple <span>(51)</span></a>
+                        <a class="dropdown-content__link" href="notebooks.html">ASUS <span>(37)</span></a>
+                        <a class="dropdown-content__link" href="notebooks.html">MSI <span>(21)</span></a>
+                        <a class="dropdown-content__link" href="notebooks.html">DEXP <span>(18)</span></a>
+                        <a class="dropdown-content__link" href="notebooks.html">HUAWEI <span>(24)</span></a>
+                      </div>
+                    </div>
+                    <div class="sidebar__dropdown">
+                      <div class="sidebar__dropdown-head">
+                        <span>Mobile phones</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
+                          <path d="M0.5 12.5L6.5 6.5L0.5 0.5" stroke="#f4ad42"></path>
+                        </svg>
+                      </div>
+                      <div class="sidebar__dropdown-content">
+                        <a class="dropdown-content__link" href="mobiles.html">Apple <span>(51)</span></a>
+                        <a class="dropdown-content__link" href="mobiles.html">HONOR <span>(37)</span></a>
+                        <a class="dropdown-content__link" href="mobiles.html">SAMSUNG <span>(21)</span></a>
+                        <a class="dropdown-content__link" href="mobiles.html">XIAOMI <span>(18)</span></a>
+                        <a class="dropdown-content__link" href="mobiles.html">NOKIA <span>(24)</span></a>
+                      </div>
+                    </div>
+                    <div class="sidebar__dropdown">
+                      <div class="sidebar__dropdown-head">
+                        <span>Graphis tablets</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
+                          <path d="M0.5 12.5L6.5 6.5L0.5 0.5" stroke="#f4ad42"></path>
+                        </svg>
+                      </div>
+                      <div class="sidebar__dropdown-content">
+                        <a class="dropdown-content__link" href="tablets.html">Apple <span>(51)</span></a>
+                        <a class="dropdown-content__link" href="tablets.html">HONOR <span>(37)</span></a>
+                        <a class="dropdown-content__link" href="tablets.html">SAMSUNG <span>(21)</span></a>
+                        <a class="dropdown-content__link" href="tablets.html">XIAOMI <span>(18)</span></a>
+                        <a class="dropdown-content__link" href="tablets.html">NOKIA <span>(24)</span></a>
+                      </div>
+                    </div>
+                    <div class="sidebar__dropdown">
+                      <div class="sidebar__dropdown-head">
+                        <span>CPU</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
+                          <path d="M0.5 12.5L6.5 6.5L0.5 0.5" stroke="#f4ad42"></path>
+                        </svg>
+                      </div>
+                      <div class="sidebar__dropdown-content">
+                        <a class="dropdown-content__link" href="cpu.html">AMD <span>(24)</span></a>
+                        <a class="dropdown-content__link" href="cpu.html">INTEL <span>(51)</span></a>
+                      </div>
+                    </div>
+                    <div class="sidebar__dropdown">
+                      <div class="sidebar__dropdown-head">
+                        <span>Graphis cards</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
+                          <path d="M0.5 12.5L6.5 6.5L0.5 0.5" stroke="#f4ad42"></path>
+                        </svg>
+                      </div>
+                      <div class="sidebar__dropdown-content">
+                        <a class="dropdown-content__link" href="graphis.html">Acer <span>(24)</span></a>
+                        <a class="dropdown-content__link" href="graphis.html">Apple <span>(51)</span></a>
+                        <a class="dropdown-content__link" href="graphis.html">ASUS <span>(37)</span></a>
+                        <a class="dropdown-content__link" href="graphis.html">MSI <span>(21)</span></a>
+                        <a class="dropdown-content__link" href="graphis.html">DEXP <span>(18)</span></a>
+                        <a class="dropdown-content__link" href="graphis.html">HUAWEI <span>(24)</span></a>
+                      </div>
+                    </div>
+                    <div class="sidebar__dropdown sidebar-drop--active">
+                      <div class="sidebar__dropdown-head">
+                        <span>Motherboards</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
+                          <path d="M0.5 12.5L6.5 6.5L0.5 0.5" stroke="#f4ad42"></path>
+                        </svg>
+                      </div>
+                      <div class="sidebar__dropdown-content">
+                        <a class="dropdown-content__link" href="motherboards.html">Acer <span>(24)</span></a>
+                        <a class="dropdown-content__link" href="motherboards.html">Apple <span>(51)</span></a>
+                        <a class="dropdown-content__link" href="motherboards.html">ASUS <span>(37)</span></a>
+                        <a class="dropdown-content__link" href="motherboards.html">MSI <span>(21)</span></a>
+                        <a class="dropdown-content__link" href="motherboards.html">DEXP <span>(18)</span></a>
+                        <a class="dropdown-content__link" href="motherboards.html">HUAWEI <span>(24)</span></a>
+                      </div>
+                    </div>
+                    <div class="sidebar__dropdown">
+                      <div class="sidebar__dropdown-head">
+                        <span>Ssd</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
+                          <path d="M0.5 12.5L6.5 6.5L0.5 0.5" stroke="#f4ad42"></path>
+                        </svg>
+                      </div>
+                      <div class="sidebar__dropdown-content">
+                        <a class="dropdown-content__link" href="ssd.html">Acer <span>(24)</span></a>
+                        <a class="dropdown-content__link" href="ssd.html">Apple <span>(51)</span></a>
+                        <a class="dropdown-content__link" href="ssd.html">ASUS <span>(37)</span></a>
+                        <a class="dropdown-content__link" href="ssd.html">MSI <span>(21)</span></a>
+                        <a class="dropdown-content__link" href="ssd.html">DEXP <span>(18)</span></a>
+                        <a class="dropdown-content__link" href="ssd.html">HUAWEI <span>(24)</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__goods-container">        
+              <div class="catalog__goods">
+                <div class="last-news__card-item card-item">
+                  <a class="card-item__img" href="product-details.html?id=1">
+                    <img src="images/motherboard1.jpg" alt="">
+                  </a>
+                  <a class="card-item__title" href="product-details.html?id=1">MSI MEG Z790 GODLIKE MAX / Motherboard </a>
+                  <a class="card-item__text" href="product-details.html?id=1">MSI MEG Z790 GODLIKE MAX / Motherboard / extended ATX / LGA1700 Socket / Z790 Chipset / USB 3.2 Gen 1, USB 3.2 Gen 2, USB-C 3.2 Gen2, USB-C 3.2 Gen 2x2</a>
+                  <div class="card-item__price">
+                    €1,552
+                    <div class="card-add-btn">
+                      <svg data-v-5d9baa8c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-5d9baa8c="" fill-rule="evenodd" clip-rule="evenodd" d="M2.25 3C2.25 2.58579 2.58579 2.25 3 2.25H4.38197C5.04482 2.25 5.65078 2.6245 5.94721 3.21738L5.27639 3.55279L5.94721 3.21738L6.46353 4.25H20.1384C21.0982 4.25 21.6999 5.28685 21.2237 6.12017L17.9391 11.8682C17.6275 12.4135 17.0477 12.75 16.4197 12.75H8.91567L7.59225 14.8675C7.48818 15.034 7.60789 15.25 7.80425 15.25H19C19.4142 15.25 19.75 15.5858 19.75 16C19.75 16.4142 19.4142 16.75 19 16.75H7.80425C6.42974 16.75 5.59176 15.2381 6.32025 14.0725L7.67159 11.9103L5.30898 5.295L4.60557 3.8882C4.56322 3.8035 4.47666 3.75 4.38197 3.75H3C2.58579 3.75 2.25 3.41421 2.25 3ZM7.06427 5.75L9.02855 11.25H16.4197C16.5094 11.25 16.5922 11.2019 16.6368 11.124L19.7076 5.75H7.06427ZM10 19.5C10 20.3284 9.32843 21 8.5 21C7.67157 21 7 20.3284 7 19.5C7 18.6716 7.67157 18 8.5 18C9.32843 18 10 18.6716 10 19.5ZM17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z" fill="#4caf50"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="last-news__card-item card-item">
+                  <a class="card-item__img" href="product-details.html?id=1">
+                    <img src="images/motherboard2.jpg" alt="">
+                  </a>
+                  <a class="card-item__title" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X</a>
+                  <a class="card-item__text" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X / Motherboard / extended ATX / LGA1700 Socket / Z790 Chipset / USB-C, USB 3.2 Gen 1, USB 3.2 Gen 2, USB-C Gen 2x2 / 10 Gigabit L...</a>
+                  <div class="card-item__price">
+                    €1,372
+                    <div class="card-add-btn">
+                      <svg data-v-5d9baa8c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-5d9baa8c="" fill-rule="evenodd" clip-rule="evenodd" d="M2.25 3C2.25 2.58579 2.58579 2.25 3 2.25H4.38197C5.04482 2.25 5.65078 2.6245 5.94721 3.21738L5.27639 3.55279L5.94721 3.21738L6.46353 4.25H20.1384C21.0982 4.25 21.6999 5.28685 21.2237 6.12017L17.9391 11.8682C17.6275 12.4135 17.0477 12.75 16.4197 12.75H8.91567L7.59225 14.8675C7.48818 15.034 7.60789 15.25 7.80425 15.25H19C19.4142 15.25 19.75 15.5858 19.75 16C19.75 16.4142 19.4142 16.75 19 16.75H7.80425C6.42974 16.75 5.59176 15.2381 6.32025 14.0725L7.67159 11.9103L5.30898 5.295L4.60557 3.8882C4.56322 3.8035 4.47666 3.75 4.38197 3.75H3C2.58579 3.75 2.25 3.41421 2.25 3ZM7.06427 5.75L9.02855 11.25H16.4197C16.5094 11.25 16.5922 11.2019 16.6368 11.124L19.7076 5.75H7.06427ZM10 19.5C10 20.3284 9.32843 21 8.5 21C7.67157 21 7 20.3284 7 19.5C7 18.6716 7.67157 18 8.5 18C9.32843 18 10 18.6716 10 19.5ZM17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z" fill="#4caf50"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="last-news__card-item card-item">
+                  <a class="card-item__img" href="product-details.html?id=1">
+                    <img src="images/motherboard1.jpg" alt="">
+                  </a>
+                  <a class="card-item__title" href="product-details.html?id=1">MSI MEG Z790 GODLIKE MAX / Motherboard </a>
+                  <a class="card-item__text" href="product-details.html?id=1">MSI MEG Z790 GODLIKE MAX / Motherboard / extended ATX / LGA1700 Socket / Z790 Chipset / USB 3.2 Gen 1, USB 3.2 Gen 2, USB-C 3.2 Gen2, USB-C 3.2 Gen 2x2</a>
+                  <div class="card-item__price">
+                    €1,552
+                    <div class="card-add-btn">
+                      <svg data-v-5d9baa8c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-5d9baa8c="" fill-rule="evenodd" clip-rule="evenodd" d="M2.25 3C2.25 2.58579 2.58579 2.25 3 2.25H4.38197C5.04482 2.25 5.65078 2.6245 5.94721 3.21738L5.27639 3.55279L5.94721 3.21738L6.46353 4.25H20.1384C21.0982 4.25 21.6999 5.28685 21.2237 6.12017L17.9391 11.8682C17.6275 12.4135 17.0477 12.75 16.4197 12.75H8.91567L7.59225 14.8675C7.48818 15.034 7.60789 15.25 7.80425 15.25H19C19.4142 15.25 19.75 15.5858 19.75 16C19.75 16.4142 19.4142 16.75 19 16.75H7.80425C6.42974 16.75 5.59176 15.2381 6.32025 14.0725L7.67159 11.9103L5.30898 5.295L4.60557 3.8882C4.56322 3.8035 4.47666 3.75 4.38197 3.75H3C2.58579 3.75 2.25 3.41421 2.25 3ZM7.06427 5.75L9.02855 11.25H16.4197C16.5094 11.25 16.5922 11.2019 16.6368 11.124L19.7076 5.75H7.06427ZM10 19.5C10 20.3284 9.32843 21 8.5 21C7.67157 21 7 20.3284 7 19.5C7 18.6716 7.67157 18 8.5 18C9.32843 18 10 18.6716 10 19.5ZM17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z" fill="#4caf50"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="last-news__card-item card-item">
+                  <a class="card-item__img" href="product-details.html?id=1">
+                    <img src="images/motherboard2.jpg" alt="">
+                  </a>
+                  <a class="card-item__title" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X</a>
+                  <a class="card-item__text" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X / Motherboard / extended ATX / LGA1700 Socket / Z790 Chipset / USB-C, USB 3.2 Gen 1, USB 3.2 Gen 2, USB-C Gen 2x2 / 10 Gigabit L...</a>
+                  <div class="card-item__price">
+                    €1,372
+                    <div class="card-add-btn">
+                      <svg data-v-5d9baa8c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-5d9baa8c="" fill-rule="evenodd" clip-rule="evenodd" d="M2.25 3C2.25 2.58579 2.58579 2.25 3 2.25H4.38197C5.04482 2.25 5.65078 2.6245 5.94721 3.21738L5.27639 3.55279L5.94721 3.21738L6.46353 4.25H20.1384C21.0982 4.25 21.6999 5.28685 21.2237 6.12017L17.9391 11.8682C17.6275 12.4135 17.0477 12.75 16.4197 12.75H8.91567L7.59225 14.8675C7.48818 15.034 7.60789 15.25 7.80425 15.25H19C19.4142 15.25 19.75 15.5858 19.75 16C19.75 16.4142 19.4142 16.75 19 16.75H7.80425C6.42974 16.75 5.59176 15.2381 6.32025 14.0725L7.67159 11.9103L5.30898 5.295L4.60557 3.8882C4.56322 3.8035 4.47666 3.75 4.38197 3.75H3C2.58579 3.75 2.25 3.41421 2.25 3ZM7.06427 5.75L9.02855 11.25H16.4197C16.5094 11.25 16.5922 11.2019 16.6368 11.124L19.7076 5.75H7.06427ZM10 19.5C10 20.3284 9.32843 21 8.5 21C7.67157 21 7 20.3284 7 19.5C7 18.6716 7.67157 18 8.5 18C9.32843 18 10 18.6716 10 19.5ZM17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z" fill="#4caf50"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="last-news__card-item card-item">
+                  <a class="card-item__img" href="product-details.html?id=1">
+                    <img src="images/motherboard1.jpg" alt="">
+                  </a>
+                  <a class="card-item__title" href="product-details.html?id=1">MSI MEG Z790 GODLIKE MAX / Motherboard </a>
+                  <a class="card-item__text" href="product-details.html?id=1">MSI MEG Z790 GODLIKE MAX / Motherboard / extended ATX / LGA1700 Socket / Z790 Chipset / USB 3.2 Gen 1, USB 3.2 Gen 2, USB-C 3.2 Gen2, USB-C 3.2 Gen 2x2</a>
+                  <div class="card-item__price">
+                    €1,552
+                    <div class="card-add-btn">
+                      <svg data-v-5d9baa8c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-5d9baa8c="" fill-rule="evenodd" clip-rule="evenodd" d="M2.25 3C2.25 2.58579 2.58579 2.25 3 2.25H4.38197C5.04482 2.25 5.65078 2.6245 5.94721 3.21738L5.27639 3.55279L5.94721 3.21738L6.46353 4.25H20.1384C21.0982 4.25 21.6999 5.28685 21.2237 6.12017L17.9391 11.8682C17.6275 12.4135 17.0477 12.75 16.4197 12.75H8.91567L7.59225 14.8675C7.48818 15.034 7.60789 15.25 7.80425 15.25H19C19.4142 15.25 19.75 15.5858 19.75 16C19.75 16.4142 19.4142 16.75 19 16.75H7.80425C6.42974 16.75 5.59176 15.2381 6.32025 14.0725L7.67159 11.9103L5.30898 5.295L4.60557 3.8882C4.56322 3.8035 4.47666 3.75 4.38197 3.75H3C2.58579 3.75 2.25 3.41421 2.25 3ZM7.06427 5.75L9.02855 11.25H16.4197C16.5094 11.25 16.5922 11.2019 16.6368 11.124L19.7076 5.75H7.06427ZM10 19.5C10 20.3284 9.32843 21 8.5 21C7.67157 21 7 20.3284 7 19.5C7 18.6716 7.67157 18 8.5 18C9.32843 18 10 18.6716 10 19.5ZM17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z" fill="#4caf50"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="last-news__card-item card-item">
+                  <a class="card-item__img" href="product-details.html?id=1">
+                    <img src="images/motherboard2.jpg" alt="">
+                  </a>
+                  <a class="card-item__title" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X</a>
+                  <a class="card-item__text" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X / Motherboard / extended ATX / LGA1700 Socket / Z790 Chipset / USB-C, USB 3.2 Gen 1, USB 3.2 Gen 2, USB-C Gen 2x2 / 10 Gigabit L...</a>
+                  <div class="card-item__price">
+                    €1,372
+                    <div class="card-add-btn">
+                      <svg data-v-5d9baa8c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-5d9baa8c="" fill-rule="evenodd" clip-rule="evenodd" d="M2.25 3C2.25 2.58579 2.58579 2.25 3 2.25H4.38197C5.04482 2.25 5.65078 2.6245 5.94721 3.21738L5.27639 3.55279L5.94721 3.21738L6.46353 4.25H20.1384C21.0982 4.25 21.6999 5.28685 21.2237 6.12017L17.9391 11.8682C17.6275 12.4135 17.0477 12.75 16.4197 12.75H8.91567L7.59225 14.8675C7.48818 15.034 7.60789 15.25 7.80425 15.25H19C19.4142 15.25 19.75 15.5858 19.75 16C19.75 16.4142 19.4142 16.75 19 16.75H7.80425C6.42974 16.75 5.59176 15.2381 6.32025 14.0725L7.67159 11.9103L5.30898 5.295L4.60557 3.8882C4.56322 3.8035 4.47666 3.75 4.38197 3.75H3C2.58579 3.75 2.25 3.41421 2.25 3ZM7.06427 5.75L9.02855 11.25H16.4197C16.5094 11.25 16.5922 11.2019 16.6368 11.124L19.7076 5.75H7.06427ZM10 19.5C10 20.3284 9.32843 21 8.5 21C7.67157 21 7 20.3284 7 19.5C7 18.6716 7.67157 18 8.5 18C9.32843 18 10 18.6716 10 19.5ZM17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z" fill="#4caf50"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="last-news__card-item card-item">
+                  <a class="card-item__img" href="product-details.html?id=1">
+                    <img src="images/motherboard1.jpg" alt="">
+                  </a>
+                  <a class="card-item__title" href="product-details.html?id=1">MSI MEG Z790 GODLIKE MAX / Motherboard </a>
+                  <a class="card-item__text" href="product-details.html?id=1">MSI MEG Z790 GODLIKE MAX / Motherboard / extended ATX / LGA1700 Socket / Z790 Chipset / USB 3.2 Gen 1, USB 3.2 Gen 2, USB-C 3.2 Gen2, USB-C 3.2 Gen 2x2</a>
+                  <div class="card-item__price">
+                    €1,552
+                    <div class="card-add-btn">
+                      <svg data-v-5d9baa8c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-5d9baa8c="" fill-rule="evenodd" clip-rule="evenodd" d="M2.25 3C2.25 2.58579 2.58579 2.25 3 2.25H4.38197C5.04482 2.25 5.65078 2.6245 5.94721 3.21738L5.27639 3.55279L5.94721 3.21738L6.46353 4.25H20.1384C21.0982 4.25 21.6999 5.28685 21.2237 6.12017L17.9391 11.8682C17.6275 12.4135 17.0477 12.75 16.4197 12.75H8.91567L7.59225 14.8675C7.48818 15.034 7.60789 15.25 7.80425 15.25H19C19.4142 15.25 19.75 15.5858 19.75 16C19.75 16.4142 19.4142 16.75 19 16.75H7.80425C6.42974 16.75 5.59176 15.2381 6.32025 14.0725L7.67159 11.9103L5.30898 5.295L4.60557 3.8882C4.56322 3.8035 4.47666 3.75 4.38197 3.75H3C2.58579 3.75 2.25 3.41421 2.25 3ZM7.06427 5.75L9.02855 11.25H16.4197C16.5094 11.25 16.5922 11.2019 16.6368 11.124L19.7076 5.75H7.06427ZM10 19.5C10 20.3284 9.32843 21 8.5 21C7.67157 21 7 20.3284 7 19.5C7 18.6716 7.67157 18 8.5 18C9.32843 18 10 18.6716 10 19.5ZM17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z" fill="#4caf50"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="last-news__card-item card-item">
+                  <a class="card-item__img" href="product-details.html?id=1">
+                    <img src="images/motherboard2.jpg" alt="">
+                  </a>
+                  <a class="card-item__title" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X</a>
+                  <a class="card-item__text" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X / Motherboard / extended ATX / LGA1700 Socket / Z790 Chipset / USB-C, USB 3.2 Gen 1, USB 3.2 Gen 2, USB-C Gen 2x2 / 10 Gigabit L...</a>
+                  <div class="card-item__price">
+                    €1,372
+                    <div class="card-add-btn">
+                      <svg data-v-5d9baa8c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-5d9baa8c="" fill-rule="evenodd" clip-rule="evenodd" d="M2.25 3C2.25 2.58579 2.58579 2.25 3 2.25H4.38197C5.04482 2.25 5.65078 2.6245 5.94721 3.21738L5.27639 3.55279L5.94721 3.21738L6.46353 4.25H20.1384C21.0982 4.25 21.6999 5.28685 21.2237 6.12017L17.9391 11.8682C17.6275 12.4135 17.0477 12.75 16.4197 12.75H8.91567L7.59225 14.8675C7.48818 15.034 7.60789 15.25 7.80425 15.25H19C19.4142 15.25 19.75 15.5858 19.75 16C19.75 16.4142 19.4142 16.75 19 16.75H7.80425C6.42974 16.75 5.59176 15.2381 6.32025 14.0725L7.67159 11.9103L5.30898 5.295L4.60557 3.8882C4.56322 3.8035 4.47666 3.75 4.38197 3.75H3C2.58579 3.75 2.25 3.41421 2.25 3ZM7.06427 5.75L9.02855 11.25H16.4197C16.5094 11.25 16.5922 11.2019 16.6368 11.124L19.7076 5.75H7.06427ZM10 19.5C10 20.3284 9.32843 21 8.5 21C7.67157 21 7 20.3284 7 19.5C7 18.6716 7.67157 18 8.5 18C9.32843 18 10 18.6716 10 19.5ZM17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z" fill="#4caf50"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="last-news__card-item card-item">
+                  <a class="card-item__img" href="product-details.html?id=1">
+                    <img src="images/motherboard1.jpg" alt="">
+                  </a>
+                  <a class="card-item__title" href="product-details.html?id=1">MSI MEG Z790 GODLIKE MAX / Motherboard </a>
+                  <a class="card-item__text" href="product-details.html?id=1">MSI MEG Z790 GODLIKE MAX / Motherboard / extended ATX / LGA1700 Socket / Z790 Chipset / USB 3.2 Gen 1, USB 3.2 Gen 2, USB-C 3.2 Gen2, USB-C 3.2 Gen 2x2</a>
+                  <div class="card-item__price">
+                    €1,552
+                    <div class="card-add-btn">
+                      <svg data-v-5d9baa8c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-5d9baa8c="" fill-rule="evenodd" clip-rule="evenodd" d="M2.25 3C2.25 2.58579 2.58579 2.25 3 2.25H4.38197C5.04482 2.25 5.65078 2.6245 5.94721 3.21738L5.27639 3.55279L5.94721 3.21738L6.46353 4.25H20.1384C21.0982 4.25 21.6999 5.28685 21.2237 6.12017L17.9391 11.8682C17.6275 12.4135 17.0477 12.75 16.4197 12.75H8.91567L7.59225 14.8675C7.48818 15.034 7.60789 15.25 7.80425 15.25H19C19.4142 15.25 19.75 15.5858 19.75 16C19.75 16.4142 19.4142 16.75 19 16.75H7.80425C6.42974 16.75 5.59176 15.2381 6.32025 14.0725L7.67159 11.9103L5.30898 5.295L4.60557 3.8882C4.56322 3.8035 4.47666 3.75 4.38197 3.75H3C2.58579 3.75 2.25 3.41421 2.25 3ZM7.06427 5.75L9.02855 11.25H16.4197C16.5094 11.25 16.5922 11.2019 16.6368 11.124L19.7076 5.75H7.06427ZM10 19.5C10 20.3284 9.32843 21 8.5 21C7.67157 21 7 20.3284 7 19.5C7 18.6716 7.67157 18 8.5 18C9.32843 18 10 18.6716 10 19.5ZM17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z" fill="#4caf50"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="last-news__card-item card-item">
+                  <a class="card-item__img" href="product-details.html?id=1">
+                    <img src="images/motherboard2.jpg" alt="">
+                  </a>
+                  <a class="card-item__title" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X</a>
+                  <a class="card-item__text" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X / Motherboard / extended ATX / LGA1700 Socket / Z790 Chipset / USB-C, USB 3.2 Gen 1, USB 3.2 Gen 2, USB-C Gen 2x2 / 10 Gigabit L...</a>
+                  <div class="card-item__price">
+                    €1,372
+                    <div class="card-add-btn">
+                      <svg data-v-5d9baa8c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-5d9baa8c="" fill-rule="evenodd" clip-rule="evenodd" d="M2.25 3C2.25 2.58579 2.58579 2.25 3 2.25H4.38197C5.04482 2.25 5.65078 2.6245 5.94721 3.21738L5.27639 3.55279L5.94721 3.21738L6.46353 4.25H20.1384C21.0982 4.25 21.6999 5.28685 21.2237 6.12017L17.9391 11.8682C17.6275 12.4135 17.0477 12.75 16.4197 12.75H8.91567L7.59225 14.8675C7.48818 15.034 7.60789 15.25 7.80425 15.25H19C19.4142 15.25 19.75 15.5858 19.75 16C19.75 16.4142 19.4142 16.75 19 16.75H7.80425C6.42974 16.75 5.59176 15.2381 6.32025 14.0725L7.67159 11.9103L5.30898 5.295L4.60557 3.8882C4.56322 3.8035 4.47666 3.75 4.38197 3.75H3C2.58579 3.75 2.25 3.41421 2.25 3ZM7.06427 5.75L9.02855 11.25H16.4197C16.5094 11.25 16.5922 11.2019 16.6368 11.124L19.7076 5.75H7.06427ZM10 19.5C10 20.3284 9.32843 21 8.5 21C7.67157 21 7 20.3284 7 19.5C7 18.6716 7.67157 18 8.5 18C9.32843 18 10 18.6716 10 19.5ZM17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z" fill="#4caf50"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="last-news__card-item card-item">
+                  <a class="card-item__img" href="product-details.html?id=1">
+                    <img src="images/motherboard1.jpg" alt="">
+                  </a>
+                  <a class="card-item__title" href="product-details.html?id=1">MSI MEG Z790 GODLIKE MAX / Motherboard </a>
+                  <a class="card-item__text" href="product-details.html?id=1">MSI MEG Z790 GODLIKE MAX / Motherboard / extended ATX / LGA1700 Socket / Z790 Chipset / USB 3.2 Gen 1, USB 3.2 Gen 2, USB-C 3.2 Gen2, USB-C 3.2 Gen 2x2</a>
+                  <div class="card-item__price">
+                    €1,552
+                    <div class="card-add-btn">
+                      <svg data-v-5d9baa8c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-5d9baa8c="" fill-rule="evenodd" clip-rule="evenodd" d="M2.25 3C2.25 2.58579 2.58579 2.25 3 2.25H4.38197C5.04482 2.25 5.65078 2.6245 5.94721 3.21738L5.27639 3.55279L5.94721 3.21738L6.46353 4.25H20.1384C21.0982 4.25 21.6999 5.28685 21.2237 6.12017L17.9391 11.8682C17.6275 12.4135 17.0477 12.75 16.4197 12.75H8.91567L7.59225 14.8675C7.48818 15.034 7.60789 15.25 7.80425 15.25H19C19.4142 15.25 19.75 15.5858 19.75 16C19.75 16.4142 19.4142 16.75 19 16.75H7.80425C6.42974 16.75 5.59176 15.2381 6.32025 14.0725L7.67159 11.9103L5.30898 5.295L4.60557 3.8882C4.56322 3.8035 4.47666 3.75 4.38197 3.75H3C2.58579 3.75 2.25 3.41421 2.25 3ZM7.06427 5.75L9.02855 11.25H16.4197C16.5094 11.25 16.5922 11.2019 16.6368 11.124L19.7076 5.75H7.06427ZM10 19.5C10 20.3284 9.32843 21 8.5 21C7.67157 21 7 20.3284 7 19.5C7 18.6716 7.67157 18 8.5 18C9.32843 18 10 18.6716 10 19.5ZM17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z" fill="#4caf50"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="last-news__card-item card-item">
+                  <a class="card-item__img" href="product-details.html?id=1">
+                    <img src="images/motherboard2.jpg" alt="">
+                  </a>
+                  <a class="card-item__title" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X</a>
+                  <a class="card-item__text" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X / Motherboard / extended ATX / LGA1700 Socket / Z790 Chipset / USB-C, USB 3.2 Gen 1, USB 3.2 Gen 2, USB-C Gen 2x2 / 10 Gigabit L...</a>
+                  <div class="card-item__price">
+                    €1,372
+                    <div class="card-add-btn">
+                      <svg data-v-5d9baa8c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-5d9baa8c="" fill-rule="evenodd" clip-rule="evenodd" d="M2.25 3C2.25 2.58579 2.58579 2.25 3 2.25H4.38197C5.04482 2.25 5.65078 2.6245 5.94721 3.21738L5.27639 3.55279L5.94721 3.21738L6.46353 4.25H20.1384C21.0982 4.25 21.6999 5.28685 21.2237 6.12017L17.9391 11.8682C17.6275 12.4135 17.0477 12.75 16.4197 12.75H8.91567L7.59225 14.8675C7.48818 15.034 7.60789 15.25 7.80425 15.25H19C19.4142 15.25 19.75 15.5858 19.75 16C19.75 16.4142 19.4142 16.75 19 16.75H7.80425C6.42974 16.75 5.59176 15.2381 6.32025 14.0725L7.67159 11.9103L5.30898 5.295L4.60557 3.8882C4.56322 3.8035 4.47666 3.75 4.38197 3.75H3C2.58579 3.75 2.25 3.41421 2.25 3ZM7.06427 5.75L9.02855 11.25H16.4197C16.5094 11.25 16.5922 11.2019 16.6368 11.124L19.7076 5.75H7.06427ZM10 19.5C10 20.3284 9.32843 21 8.5 21C7.67157 21 7 20.3284 7 19.5C7 18.6716 7.67157 18 8.5 18C9.32843 18 10 18.6716 10 19.5ZM17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z" fill="#4caf50"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="catalog__pagination">
+            <a class="catalog__pagination-prev" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
+                <path d="M0.5 12.5L6.5 6.5L0.5 0.5" stroke="#f4ad42"/>
+              </svg>
+            </a>
+            <a class="catalog__pagination-link catalog__pagination-link--active" href="#">1</a>
+            <a class="catalog__pagination-link" href="#">2</a>
+            <a class="catalog__pagination-link" href="#">3</a>
+            <a class="catalog__pagination-link" href="#">4</a>
+            <a class="catalog__pagination-link" href="#">5</a>
+            <a class="catalog__pagination-link" href="#">6</a>
+            <a class="catalog__pagination-next" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
+                <path d="M0.5 12.5L6.5 6.5L0.5 0.5" stroke="#f4ad42"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="last-news">
+        <div class="container">
+          <h1 class="last-news__title">
+            Recommend
+            <div class="swiper-navigation">
+              <div class="swiper-button-prev__last-news swiper-button-prev__last-news1 swiper-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="12" viewBox="0 0 31 12" fill="none">
+                  <path d="M30 6.75C30.4142 6.75 30.75 6.41421 30.75 6C30.75 5.58579 30.4142 5.25 30 5.25L30 6.75ZM0.469669 5.46967C0.176777 5.76256 0.176777 6.23743 0.469669 6.53033L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 6L6.3033 1.75736C6.59619 1.46446 6.59619 0.989591 6.3033 0.696697C6.01041 0.403804 5.53553 0.403804 5.24264 0.696697L0.469669 5.46967ZM30 5.25L1 5.25L1 6.75L30 6.75L30 5.25Z" fill="#B9BEC0"/>
+                </svg>
+              </div>
+              <div class="swiper-button-next__last-news swiper-button-next__last-news1 swiper-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="12" viewBox="0 0 31 12" fill="none">
+                  <path d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM30.5303 6.53033C30.8232 6.23744 30.8232 5.76257 30.5303 5.46967L25.7574 0.696701C25.4645 0.403808 24.9896 0.403808 24.6967 0.696701C24.4038 0.989594 24.4038 1.46447 24.6967 1.75736L28.9393 6L24.6967 10.2426C24.4038 10.5355 24.4038 11.0104 24.6967 11.3033C24.9896 11.5962 25.4645 11.5962 25.7574 11.3033L30.5303 6.53033ZM1 6.75L30 6.75L30 5.25L1 5.25L1 6.75Z" fill="#B9BEC0"/>
+                </svg>
+              </div>
+            </div>
+          </h1>
+          <div class="last-news__inner last-news__inner1">
+            <div class="swiper-wrapper">
+              <div class="last-news__card-item card-item swiper-slide">
+                <a class="card-item__img" href="product-details.html?id=1">
+                  <img src="images/mother2.jpg" alt="">
+                </a>
+                <a class="card-item__title" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X</a>
+                <a class="card-item__text" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X / Motherboard / extended ATX / LGA1700 Socket / Z790 Chipset / USB-C, USB 3.2 Gen 1, USB 3.2 Gen 2, USB-C Gen 2x2 / 10 Gigabit L...</a>
+                <div class="card-item__price">
+                  €1,372
+                  <div class="card-add-btn">
+                    <svg data-v-5d9baa8c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-5d9baa8c="" fill-rule="evenodd" clip-rule="evenodd" d="M2.25 3C2.25 2.58579 2.58579 2.25 3 2.25H4.38197C5.04482 2.25 5.65078 2.6245 5.94721 3.21738L5.27639 3.55279L5.94721 3.21738L6.46353 4.25H20.1384C21.0982 4.25 21.6999 5.28685 21.2237 6.12017L17.9391 11.8682C17.6275 12.4135 17.0477 12.75 16.4197 12.75H8.91567L7.59225 14.8675C7.48818 15.034 7.60789 15.25 7.80425 15.25H19C19.4142 15.25 19.75 15.5858 19.75 16C19.75 16.4142 19.4142 16.75 19 16.75H7.80425C6.42974 16.75 5.59176 15.2381 6.32025 14.0725L7.67159 11.9103L5.30898 5.295L4.60557 3.8882C4.56322 3.8035 4.47666 3.75 4.38197 3.75H3C2.58579 3.75 2.25 3.41421 2.25 3ZM7.06427 5.75L9.02855 11.25H16.4197C16.5094 11.25 16.5922 11.2019 16.6368 11.124L19.7076 5.75H7.06427ZM10 19.5C10 20.3284 9.32843 21 8.5 21C7.67157 21 7 20.3284 7 19.5C7 18.6716 7.67157 18 8.5 18C9.32843 18 10 18.6716 10 19.5ZM17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z" fill="#4caf50"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="last-news__card-item card-item swiper-slide">
+                <a class="card-item__img" href="product-details.html?id=1">
+                  <img src="images/mother3.jpg" alt="">
+                </a>
+                <a class="card-item__title" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X</a>
+                <a class="card-item__text" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X / Motherboard / extended ATX / LGA1700 Socket / Z790 Chipset / USB-C, USB 3.2 Gen 1, USB 3.2 Gen 2, USB-C Gen 2x2 / 10 Gigabit L...</a>
+                <div class="card-item__price">
+                  €1,372
+                  <div class="card-add-btn">
+                    <svg data-v-5d9baa8c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-5d9baa8c="" fill-rule="evenodd" clip-rule="evenodd" d="M2.25 3C2.25 2.58579 2.58579 2.25 3 2.25H4.38197C5.04482 2.25 5.65078 2.6245 5.94721 3.21738L5.27639 3.55279L5.94721 3.21738L6.46353 4.25H20.1384C21.0982 4.25 21.6999 5.28685 21.2237 6.12017L17.9391 11.8682C17.6275 12.4135 17.0477 12.75 16.4197 12.75H8.91567L7.59225 14.8675C7.48818 15.034 7.60789 15.25 7.80425 15.25H19C19.4142 15.25 19.75 15.5858 19.75 16C19.75 16.4142 19.4142 16.75 19 16.75H7.80425C6.42974 16.75 5.59176 15.2381 6.32025 14.0725L7.67159 11.9103L5.30898 5.295L4.60557 3.8882C4.56322 3.8035 4.47666 3.75 4.38197 3.75H3C2.58579 3.75 2.25 3.41421 2.25 3ZM7.06427 5.75L9.02855 11.25H16.4197C16.5094 11.25 16.5922 11.2019 16.6368 11.124L19.7076 5.75H7.06427ZM10 19.5C10 20.3284 9.32843 21 8.5 21C7.67157 21 7 20.3284 7 19.5C7 18.6716 7.67157 18 8.5 18C9.32843 18 10 18.6716 10 19.5ZM17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z" fill="#4caf50"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="last-news__card-item card-item swiper-slide">
+                <a class="card-item__img" href="product-details.html?id=1">
+                  <img src="images/mother4.jpg" alt="">
+                </a>
+                <a class="card-item__title" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X</a>
+                <a class="card-item__text" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X / Motherboard / extended ATX / LGA1700 Socket / Z790 Chipset / USB-C, USB 3.2 Gen 1, USB 3.2 Gen 2, USB-C Gen 2x2 / 10 Gigabit L...</a>
+                <div class="card-item__price">
+                  €1,372
+                  <div class="card-add-btn">
+                    <svg data-v-5d9baa8c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-5d9baa8c="" fill-rule="evenodd" clip-rule="evenodd" d="M2.25 3C2.25 2.58579 2.58579 2.25 3 2.25H4.38197C5.04482 2.25 5.65078 2.6245 5.94721 3.21738L5.27639 3.55279L5.94721 3.21738L6.46353 4.25H20.1384C21.0982 4.25 21.6999 5.28685 21.2237 6.12017L17.9391 11.8682C17.6275 12.4135 17.0477 12.75 16.4197 12.75H8.91567L7.59225 14.8675C7.48818 15.034 7.60789 15.25 7.80425 15.25H19C19.4142 15.25 19.75 15.5858 19.75 16C19.75 16.4142 19.4142 16.75 19 16.75H7.80425C6.42974 16.75 5.59176 15.2381 6.32025 14.0725L7.67159 11.9103L5.30898 5.295L4.60557 3.8882C4.56322 3.8035 4.47666 3.75 4.38197 3.75H3C2.58579 3.75 2.25 3.41421 2.25 3ZM7.06427 5.75L9.02855 11.25H16.4197C16.5094 11.25 16.5922 11.2019 16.6368 11.124L19.7076 5.75H7.06427ZM10 19.5C10 20.3284 9.32843 21 8.5 21C7.67157 21 7 20.3284 7 19.5C7 18.6716 7.67157 18 8.5 18C9.32843 18 10 18.6716 10 19.5ZM17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z" fill="#4caf50"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="last-news__card-item card-item swiper-slide">
+                <a class="card-item__img" href="product-details.html?id=1">
+                  <img src="images/mother5.jpg" alt="">
+                </a>
+                <a class="card-item__title" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X</a>
+                <a class="card-item__text" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X / Motherboard / extended ATX / LGA1700 Socket / Z790 Chipset / USB-C, USB 3.2 Gen 1, USB 3.2 Gen 2, USB-C Gen 2x2 / 10 Gigabit L...</a>
+                <div class="card-item__price">
+                  €1,372
+                  <div class="card-add-btn">
+                    <svg data-v-5d9baa8c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-5d9baa8c="" fill-rule="evenodd" clip-rule="evenodd" d="M2.25 3C2.25 2.58579 2.58579 2.25 3 2.25H4.38197C5.04482 2.25 5.65078 2.6245 5.94721 3.21738L5.27639 3.55279L5.94721 3.21738L6.46353 4.25H20.1384C21.0982 4.25 21.6999 5.28685 21.2237 6.12017L17.9391 11.8682C17.6275 12.4135 17.0477 12.75 16.4197 12.75H8.91567L7.59225 14.8675C7.48818 15.034 7.60789 15.25 7.80425 15.25H19C19.4142 15.25 19.75 15.5858 19.75 16C19.75 16.4142 19.4142 16.75 19 16.75H7.80425C6.42974 16.75 5.59176 15.2381 6.32025 14.0725L7.67159 11.9103L5.30898 5.295L4.60557 3.8882C4.56322 3.8035 4.47666 3.75 4.38197 3.75H3C2.58579 3.75 2.25 3.41421 2.25 3ZM7.06427 5.75L9.02855 11.25H16.4197C16.5094 11.25 16.5922 11.2019 16.6368 11.124L19.7076 5.75H7.06427ZM10 19.5C10 20.3284 9.32843 21 8.5 21C7.67157 21 7 20.3284 7 19.5C7 18.6716 7.67157 18 8.5 18C9.32843 18 10 18.6716 10 19.5ZM17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z" fill="#4caf50"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="last-news__card-item card-item swiper-slide">
+                <a class="card-item__img" href="product-details.html?id=1">
+                  <img src="images/mother6.jpg" alt="">
+                </a>
+                <a class="card-item__title" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X</a>
+                <a class="card-item__text" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X / Motherboard / extended ATX / LGA1700 Socket / Z790 Chipset / USB-C, USB 3.2 Gen 1, USB 3.2 Gen 2, USB-C Gen 2x2 / 10 Gigabit L...</a>
+                <div class="card-item__price">
+                  €1,372
+                  <div class="card-add-btn">
+                    <svg data-v-5d9baa8c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-5d9baa8c="" fill-rule="evenodd" clip-rule="evenodd" d="M2.25 3C2.25 2.58579 2.58579 2.25 3 2.25H4.38197C5.04482 2.25 5.65078 2.6245 5.94721 3.21738L5.27639 3.55279L5.94721 3.21738L6.46353 4.25H20.1384C21.0982 4.25 21.6999 5.28685 21.2237 6.12017L17.9391 11.8682C17.6275 12.4135 17.0477 12.75 16.4197 12.75H8.91567L7.59225 14.8675C7.48818 15.034 7.60789 15.25 7.80425 15.25H19C19.4142 15.25 19.75 15.5858 19.75 16C19.75 16.4142 19.4142 16.75 19 16.75H7.80425C6.42974 16.75 5.59176 15.2381 6.32025 14.0725L7.67159 11.9103L5.30898 5.295L4.60557 3.8882C4.56322 3.8035 4.47666 3.75 4.38197 3.75H3C2.58579 3.75 2.25 3.41421 2.25 3ZM7.06427 5.75L9.02855 11.25H16.4197C16.5094 11.25 16.5922 11.2019 16.6368 11.124L19.7076 5.75H7.06427ZM10 19.5C10 20.3284 9.32843 21 8.5 21C7.67157 21 7 20.3284 7 19.5C7 18.6716 7.67157 18 8.5 18C9.32843 18 10 18.6716 10 19.5ZM17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z" fill="#4caf50"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="last-news__card-item card-item swiper-slide">
+                <a class="card-item__img" href="product-details.html?id=1">
+                  <img src="images/mother2.jpg" alt="">
+                </a>
+                <a class="card-item__title" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X</a>
+                <a class="card-item__text" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X / Motherboard / extended ATX / LGA1700 Socket / Z790 Chipset / USB-C, USB 3.2 Gen 1, USB 3.2 Gen 2, USB-C Gen 2x2 / 10 Gigabit L...</a>
+                <div class="card-item__price">
+                  €1,372
+                  <div class="card-add-btn">
+                    <svg data-v-5d9baa8c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-5d9baa8c="" fill-rule="evenodd" clip-rule="evenodd" d="M2.25 3C2.25 2.58579 2.58579 2.25 3 2.25H4.38197C5.04482 2.25 5.65078 2.6245 5.94721 3.21738L5.27639 3.55279L5.94721 3.21738L6.46353 4.25H20.1384C21.0982 4.25 21.6999 5.28685 21.2237 6.12017L17.9391 11.8682C17.6275 12.4135 17.0477 12.75 16.4197 12.75H8.91567L7.59225 14.8675C7.48818 15.034 7.60789 15.25 7.80425 15.25H19C19.4142 15.25 19.75 15.5858 19.75 16C19.75 16.4142 19.4142 16.75 19 16.75H7.80425C6.42974 16.75 5.59176 15.2381 6.32025 14.0725L7.67159 11.9103L5.30898 5.295L4.60557 3.8882C4.56322 3.8035 4.47666 3.75 4.38197 3.75H3C2.58579 3.75 2.25 3.41421 2.25 3ZM7.06427 5.75L9.02855 11.25H16.4197C16.5094 11.25 16.5922 11.2019 16.6368 11.124L19.7076 5.75H7.06427ZM10 19.5C10 20.3284 9.32843 21 8.5 21C7.67157 21 7 20.3284 7 19.5C7 18.6716 7.67157 18 8.5 18C9.32843 18 10 18.6716 10 19.5ZM17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z" fill="#4caf50"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="last-news__card-item card-item swiper-slide">
+                <a class="card-item__img" href="product-details.html?id=1">
+                  <img src="images/mother3.jpg" alt="">
+                </a>
+                <a class="card-item__title" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X</a>
+                <a class="card-item__text" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X / Motherboard / extended ATX / LGA1700 Socket / Z790 Chipset / USB-C, USB 3.2 Gen 1, USB 3.2 Gen 2, USB-C Gen 2x2 / 10 Gigabit L...</a>
+                <div class="card-item__price">
+                  €1,372
+                  <div class="card-add-btn">
+                    <svg data-v-5d9baa8c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-5d9baa8c="" fill-rule="evenodd" clip-rule="evenodd" d="M2.25 3C2.25 2.58579 2.58579 2.25 3 2.25H4.38197C5.04482 2.25 5.65078 2.6245 5.94721 3.21738L5.27639 3.55279L5.94721 3.21738L6.46353 4.25H20.1384C21.0982 4.25 21.6999 5.28685 21.2237 6.12017L17.9391 11.8682C17.6275 12.4135 17.0477 12.75 16.4197 12.75H8.91567L7.59225 14.8675C7.48818 15.034 7.60789 15.25 7.80425 15.25H19C19.4142 15.25 19.75 15.5858 19.75 16C19.75 16.4142 19.4142 16.75 19 16.75H7.80425C6.42974 16.75 5.59176 15.2381 6.32025 14.0725L7.67159 11.9103L5.30898 5.295L4.60557 3.8882C4.56322 3.8035 4.47666 3.75 4.38197 3.75H3C2.58579 3.75 2.25 3.41421 2.25 3ZM7.06427 5.75L9.02855 11.25H16.4197C16.5094 11.25 16.5922 11.2019 16.6368 11.124L19.7076 5.75H7.06427ZM10 19.5C10 20.3284 9.32843 21 8.5 21C7.67157 21 7 20.3284 7 19.5C7 18.6716 7.67157 18 8.5 18C9.32843 18 10 18.6716 10 19.5ZM17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z" fill="#4caf50"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="last-news__card-item card-item swiper-slide">
+                <a class="card-item__img" href="product-details.html?id=1">
+                  <img src="images/mother4.jpg" alt="">
+                </a>
+                <a class="card-item__title" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X</a>
+                <a class="card-item__text" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X / Motherboard / extended ATX / LGA1700 Socket / Z790 Chipset / USB-C, USB 3.2 Gen 1, USB 3.2 Gen 2, USB-C Gen 2x2 / 10 Gigabit L...</a>
+                <div class="card-item__price">
+                  €1,372
+                  <div class="card-add-btn">
+                    <svg data-v-5d9baa8c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-5d9baa8c="" fill-rule="evenodd" clip-rule="evenodd" d="M2.25 3C2.25 2.58579 2.58579 2.25 3 2.25H4.38197C5.04482 2.25 5.65078 2.6245 5.94721 3.21738L5.27639 3.55279L5.94721 3.21738L6.46353 4.25H20.1384C21.0982 4.25 21.6999 5.28685 21.2237 6.12017L17.9391 11.8682C17.6275 12.4135 17.0477 12.75 16.4197 12.75H8.91567L7.59225 14.8675C7.48818 15.034 7.60789 15.25 7.80425 15.25H19C19.4142 15.25 19.75 15.5858 19.75 16C19.75 16.4142 19.4142 16.75 19 16.75H7.80425C6.42974 16.75 5.59176 15.2381 6.32025 14.0725L7.67159 11.9103L5.30898 5.295L4.60557 3.8882C4.56322 3.8035 4.47666 3.75 4.38197 3.75H3C2.58579 3.75 2.25 3.41421 2.25 3ZM7.06427 5.75L9.02855 11.25H16.4197C16.5094 11.25 16.5922 11.2019 16.6368 11.124L19.7076 5.75H7.06427ZM10 19.5C10 20.3284 9.32843 21 8.5 21C7.67157 21 7 20.3284 7 19.5C7 18.6716 7.67157 18 8.5 18C9.32843 18 10 18.6716 10 19.5ZM17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z" fill="#4caf50"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="last-news__card-item card-item swiper-slide">
+                <a class="card-item__img" href="product-details.html?id=1">
+                  <img src="images/mother5.jpg" alt="">
+                </a>
+                <a class="card-item__title" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X</a>
+                <a class="card-item__text" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X / Motherboard / extended ATX / LGA1700 Socket / Z790 Chipset / USB-C, USB 3.2 Gen 1, USB 3.2 Gen 2, USB-C Gen 2x2 / 10 Gigabit L...</a>
+                <div class="card-item__price">
+                  €1,372
+                  <div class="card-add-btn">
+                    <svg data-v-5d9baa8c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-5d9baa8c="" fill-rule="evenodd" clip-rule="evenodd" d="M2.25 3C2.25 2.58579 2.58579 2.25 3 2.25H4.38197C5.04482 2.25 5.65078 2.6245 5.94721 3.21738L5.27639 3.55279L5.94721 3.21738L6.46353 4.25H20.1384C21.0982 4.25 21.6999 5.28685 21.2237 6.12017L17.9391 11.8682C17.6275 12.4135 17.0477 12.75 16.4197 12.75H8.91567L7.59225 14.8675C7.48818 15.034 7.60789 15.25 7.80425 15.25H19C19.4142 15.25 19.75 15.5858 19.75 16C19.75 16.4142 19.4142 16.75 19 16.75H7.80425C6.42974 16.75 5.59176 15.2381 6.32025 14.0725L7.67159 11.9103L5.30898 5.295L4.60557 3.8882C4.56322 3.8035 4.47666 3.75 4.38197 3.75H3C2.58579 3.75 2.25 3.41421 2.25 3ZM7.06427 5.75L9.02855 11.25H16.4197C16.5094 11.25 16.5922 11.2019 16.6368 11.124L19.7076 5.75H7.06427ZM10 19.5C10 20.3284 9.32843 21 8.5 21C7.67157 21 7 20.3284 7 19.5C7 18.6716 7.67157 18 8.5 18C9.32843 18 10 18.6716 10 19.5ZM17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z" fill="#4caf50"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="last-news__card-item card-item swiper-slide">
+                <a class="card-item__img" href="product-details.html?id=1">
+                  <img src="images/mother6.jpg" alt="">
+                </a>
+                <a class="card-item__title" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X</a>
+                <a class="card-item__text" href="product-details.html?id=1">Gigabyte Z790 AORUS XTREME X / Motherboard / extended ATX / LGA1700 Socket / Z790 Chipset / USB-C, USB 3.2 Gen 1, USB 3.2 Gen 2, USB-C Gen 2x2 / 10 Gigabit L...</a>
+                <div class="card-item__price">
+                  €1,372
+                  <div class="card-add-btn">
+                    <svg data-v-5d9baa8c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-5d9baa8c="" fill-rule="evenodd" clip-rule="evenodd" d="M2.25 3C2.25 2.58579 2.58579 2.25 3 2.25H4.38197C5.04482 2.25 5.65078 2.6245 5.94721 3.21738L5.27639 3.55279L5.94721 3.21738L6.46353 4.25H20.1384C21.0982 4.25 21.6999 5.28685 21.2237 6.12017L17.9391 11.8682C17.6275 12.4135 17.0477 12.75 16.4197 12.75H8.91567L7.59225 14.8675C7.48818 15.034 7.60789 15.25 7.80425 15.25H19C19.4142 15.25 19.75 15.5858 19.75 16C19.75 16.4142 19.4142 16.75 19 16.75H7.80425C6.42974 16.75 5.59176 15.2381 6.32025 14.0725L7.67159 11.9103L5.30898 5.295L4.60557 3.8882C4.56322 3.8035 4.47666 3.75 4.38197 3.75H3C2.58579 3.75 2.25 3.41421 2.25 3ZM7.06427 5.75L9.02855 11.25H16.4197C16.5094 11.25 16.5922 11.2019 16.6368 11.124L19.7076 5.75H7.06427ZM10 19.5C10 20.3284 9.32843 21 8.5 21C7.67157 21 7 20.3284 7 19.5C7 18.6716 7.67157 18 8.5 18C9.32843 18 10 18.6716 10 19.5ZM17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z" fill="#4caf50"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="popup popup-form" data-popup="form">
+        <div class="popup__content">
+          <button class="popup-closer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M14.2855 15L-0.000172881 0.714284L0.714111 0L14.9998 14.2857L14.2855 15Z" fill="#6C7073" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M15 0.714734L0.714284 15.0004L0 14.2861L14.2857 0.000449988L15 0.714734Z" fill="#6C7073" />
+            </svg>
+          </button>
+          <h5 class="popup__content-title">Оставьте заявку</h5>
+          <h6 class="popup__content-subtitle">И мы с вами свяжемся</h6>
+          <form class="popup__form" action="че то там.php" method="POST">
+            <div class="popup__input-box">
+              <input type="text" placeholder="Ваше имя">
+              <input type="text" placeholder="Ваш телефон">
+              <textarea placeholder="Комментарий (необязательно)"></textarea>
+            </div>
+            <div class="popup__radio-box">
+              <label class="popup__label">
+                <input class="popup__radio-input" checked type="radio" name="popup-radio">
+                <div class="popup__radio">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                    <rect y="0.5" width="16" height="16" rx="8" fill="#5269E0" />
+                    <path d="M6 7.83333L8 10.5L11 6.5" stroke="white" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <span>Позвонить по телефону</span>
+              </label>
+              <label class="popup__label">
+                <input class="popup__radio-input" type="radio" name="popup-radio">
+                <div class="popup__radio">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                    <rect y="0.5" width="16" height="16" rx="8" fill="#5269E0" />
+                    <path d="M6 7.83333L8 10.5L11 6.5" stroke="white" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <span>Написать в WhatsApp</span>
+              </label>
+              <label class="popup__label">
+                <input class="popup__radio-input" type="radio" name="popup-radio">
+                <div class="popup__radio">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                    <rect y="0.5" width="16" height="16" rx="8" fill="#5269E0" />
+                    <path d="M6 7.83333L8 10.5L11 6.5" stroke="white" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <span>Написать в Telegram</span>
+              </label>
+            </div>
+            <div class="popup__form-footer">
+              <button class="popup__form-btn" type="submit">Оставить заявку</button>
+              <p class="popup__form-text">Отправляя заявку вы соглашаетесь с правилами политики конфидицальности </p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer-top__inner">
+            <div class="footer-top__item">
+              <a class="footer-top__logo-link" href="#">
+                <img src="images/logo_coengine_2.svg" alt="">
+              </a>
+            </div>
+            <div class="footer-top__lists-box">
+              <ul class="footer-top__list" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <li class="footer-top__list-item"><a class="footer-top__list-link" href="#" itemprop="url">About us</a></li>
+                <li class="footer-top__list-item"><a class="footer-top__list-link" href="#" itemprop="url">Contact us</a></li>
+                <li class="footer-top__list-item"><a class="footer-top__list-link" href="#" itemprop="url">Gift certificates</a></li>
+                <li class="footer-top__list-item"><a class="footer-top__list-link" href="#" itemprop="url">Our brands</a></li>
+              </ul>
+              <ul class="footer-top__list" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <li class="footer-top__list-item"><a class="footer-top__list-link" href="#" itemprop="url">Sign in</a></li>
+                <li class="footer-top__list-item"><a class="footer-top__list-link" href="#" itemprop="url">Create account</a></li>
+
+              </ul>
+              <ul class="footer-top__list" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <li class="footer-top__list-item"><a class="footer-top__list-link" href="#" itemprop="url">Privacy Policy</a></li>
+                <li class="footer-top__list-item"><a class="footer-top__list-link" href="#" itemprop="url">Returns Policy</a></li>
+                <li class="footer-top__list-item"><a class="footer-top__list-link" href="#" itemprop="url">Cookie Policy</a></li>
+
+              </ul>
+            </div>
+            <div class="footer-top__contact-box">
+              <a class="footer-top__phone-link" href="#">+852 60447160</a>
+              <a class="footer-top__phone-link" href="#">+65 97700236</a>
+              <a class="footer-top__adress-link" style="width: 300px;" href="#">Room No. 301, Unit C, 2nd Floor
+                Kwong On Bank Mongkok Branch Building, 728-730
+                Nathan Road, Mongkok, Kowloon, Hong Kong</a>
+              <a class="footer-top__mail-link" href="mailto:">stephenchew.business.hk@gmail.com</a>
+              <div class="footer-top__social">
+                <a class="footer-top__social-link" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z" fill="#f4ad42"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.78977 14.8414C11.1626 12.9363 14.0785 11.6803 15.5374 11.0734C19.7031 9.34081 20.5687 9.03983 21.1329 9.02989C21.257 9.02771 21.5344 9.05846 21.7141 9.20429C21.8659 9.32742 21.9076 9.49376 21.9276 9.6105C21.9476 9.72725 21.9725 9.9932 21.9527 10.201C21.7269 12.5729 20.7502 18.3287 20.2533 20.9852C20.043 22.1093 19.629 22.4862 19.2281 22.5231C18.3571 22.6032 17.6956 21.9474 16.8519 21.3944C15.5317 20.529 14.7859 19.9902 13.5044 19.1458C12.0235 18.1698 12.9835 17.6334 13.8275 16.7568C14.0484 16.5274 17.8864 13.0365 17.9607 12.7198C17.97 12.6802 17.9786 12.5326 17.8909 12.4546C17.8032 12.3766 17.6737 12.4033 17.5803 12.4245C17.4479 12.4545 15.3389 13.8485 11.2532 16.6065C10.6546 17.0175 10.1123 17.2178 9.62652 17.2073C9.09094 17.1958 8.0607 16.9045 7.29483 16.6555C6.35545 16.3502 5.60886 16.1888 5.67387 15.6702C5.70773 15.4001 6.0797 15.1238 6.78977 14.8414Z" fill="white"/>
+                  </svg>
+                </a>
+                <a class="footer-top__social-link"  href="#"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <rect width="30" height="30" rx="15" fill="white"/>
+                    <path d="M15 0C6.717 0 0 6.717 0 15C0 23.283 6.717 30 15 30C23.283 30 30 23.283 30 15C30 6.717 23.283 0 15 0ZM15.3179 23.7334C15.3177 23.7334 15.3181 23.7334 15.3179 23.7334H15.3143C13.8116 23.7328 12.3351 23.356 11.0239 22.641L6.26472 23.8891L7.53845 19.2382C6.7527 17.8773 6.33934 16.3332 6.34003 14.7514C6.34209 9.80301 10.3695 5.77721 15.3179 5.77721C17.7193 5.77812 19.9736 6.71288 21.6685 8.40912C23.3636 10.1056 24.2965 12.3605 24.2956 14.7585C24.2935 19.7072 20.2657 23.7334 15.3179 23.7334Z" fill="#f4ad42"/>
+                    <path d="M15.3207 7.29297C11.2047 7.29297 7.8573 10.639 7.85547 14.752C7.85501 16.1615 8.2496 17.5341 8.99645 18.7217L9.17383 19.0039L8.41989 21.7567L11.2441 21.016L11.5167 21.1776C12.6622 21.8574 13.9755 22.217 15.3145 22.2174H15.3175C19.4303 22.2174 22.7777 18.8712 22.7795 14.7579C22.7802 12.7646 22.0047 10.8905 20.596 9.48062C19.1872 8.07071 17.3136 7.29366 15.3207 7.29297ZM19.7097 17.9591C19.5227 18.4828 18.6267 18.9609 18.1957 19.0255C17.8091 19.0831 17.3202 19.1072 16.7828 18.9366C16.4569 18.8332 16.0391 18.6952 15.5038 18.4642C13.2537 17.4929 11.784 15.2278 11.6718 15.0782C11.5597 14.9285 10.7559 13.8621 10.7559 12.7582C10.7559 11.6545 11.3354 11.1119 11.5409 10.8876C11.7467 10.663 11.9898 10.6069 12.1392 10.6069C12.2887 10.6069 12.4384 10.6083 12.5691 10.6147C12.7069 10.6216 12.8918 10.5623 13.0738 10.9997C13.2607 11.4488 13.7094 12.5524 13.7654 12.6646C13.8215 12.777 13.8588 12.9079 13.7842 13.0576C13.7094 13.2073 13.4608 13.5302 13.2234 13.8246C13.1239 13.9479 12.9941 14.0578 13.125 14.2823C13.2557 14.5066 13.7062 15.2411 14.3729 15.8358C15.2298 16.5998 15.9526 16.8364 16.1769 16.9488C16.401 17.061 16.5319 17.0422 16.6629 16.8927C16.7935 16.743 17.2236 16.2379 17.3731 16.0134C17.5225 15.7888 17.6722 15.8264 17.8778 15.9012C18.0835 15.9758 19.1863 16.5185 19.4106 16.6307C19.6349 16.743 19.7843 16.7991 19.8404 16.8927C19.8967 16.9863 19.8967 17.4352 19.7097 17.9591Z" fill="#f4ad42"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="footer-bot__link" href="#">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. | Copyright © 2024 COENGINE LTD. All rights Reserved.</a>
+    </footer>
+
+  </div>
+
+  <script src="js/libs.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
